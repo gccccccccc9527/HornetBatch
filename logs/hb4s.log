@@ -1,3 +1,0 @@
-2018-05-24 14:54:53.313|main|INFO |com.hornet.modules.demo.DemoTaskMain - 开始执行demo批量步骤一...执行时间=2018-5-24 14:54:53
-2018-05-24 14:54:53.324|main|INFO |com.hornet.modules.demo.DemoTaskMain - 读取配置文件demo-config.txt中的test=1111,2222,3333,4444
-2018-05-24 14:54:53.325|main|INFO |com.hornet.modules.demo.DemoTaskMain - 执行demo批量步骤一结束！执行时间=2018-5-24 14:54:53
