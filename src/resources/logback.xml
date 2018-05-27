@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+	<appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}|%thread|%-5level|%logger{50} - %msg%n</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/hb4s.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<!-- 保存历史记录到这个文件夹，日起为后缀 -->
+			<fileNamePattern>logs/hb4s.log.%d{yyyy-MM-dd}</fileNamePattern>
+			<!-- 自动保存30天之内的日志文件 -->
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS}|%thread|%-5level|%logger{50} - %msg%n</pattern>
+			<charset>utf8</charset>
+		</encoder>
+	</appender>
+	
+	<root level="info">
+		<appender-ref ref="CONSOLE"></appender-ref>
+		<appender-ref ref="FILE"></appender-ref>
+	</root>
+</configuration>
