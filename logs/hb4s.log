@@ -1,6 +1,671 @@
-2018-05-27 10:12:20.276|main|INFO |com.hornet.modules.demo.DemoTaskMain - 开始执行demo批量步骤一...执行时间=2018-5-27 10:12:20
-2018-05-27 10:12:20.286|main|INFO |com.hornet.modules.demo.DemoTaskMain - 读取配置文件demo-config.txt中的test=1111,2222,3333,4444
-2018-05-27 10:12:20.286|main|INFO |com.hornet.modules.demo.DemoTaskMain - 执行demo批量步骤一结束！执行时间=2018-5-27 10:12:20
-2018-05-27 10:28:32.892|main|INFO |com.hornet.modules.demo.DemoTaskMain - 开始执行demo批量步骤一...执行时间=2018-5-27 10:28:32
-2018-05-27 10:28:32.897|main|INFO |com.hornet.modules.demo.DemoTaskMain - 读取配置文件demo-config.txt中的test=1111,2222,3333,4444
-2018-05-27 10:28:32.897|main|INFO |com.hornet.modules.demo.DemoTaskMain - 执行demo批量步骤一结束！执行时间=2018-5-27 10:28:32
+2018-05-28 14:43:42.568|main|INFO |com.hornet.modules.demo.DemoTaskMain - 开始执行demo批量步骤一...执行时间=2018-5-28 14:43:42
+2018-05-28 14:43:42.579|main|INFO |com.hornet.modules.demo.DemoTaskMain - 读取配置文件demo-config.txt中的test=1111,2222,3333,4444
+2018-05-28 14:43:42.579|main|INFO |com.hornet.modules.demo.DemoTaskMain - 执行demo批量步骤一结束！执行时间=2018-5-28 14:43:42
+2018-05-28 14:47:06.702|main|INFO |com.hornet.modules.demo.DemoTaskMain - 开始执行demo批量步骤一...执行时间=2018-5-28 14:47:06
+2018-05-28 14:47:06.707|main|INFO |com.hornet.modules.demo.DemoTaskMain - 读取配置文件demo-config.txt中的test=1111,2222,3333,4444
+2018-05-28 14:47:06.707|main|INFO |com.hornet.modules.demo.DemoTaskMain - 执行demo批量步骤一结束！执行时间=2018-5-28 14:47:06
+2018-05-28 18:17:11.019|main|INFO |com.hornet.core.db.JDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:17:11.023|main|INFO |com.hornet.core.db.JDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:20:20.074|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:20:20.077|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:21:02.693|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:21:02.696|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:22:35.355|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:22:35.357|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:22:36.037|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+java.sql.SQLException: Access denied for user 'hornet'@'localhost' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:22:59.114|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:22:59.117|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:22:59.677|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+java.sql.SQLException: Access denied for user 'hornet'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:23:42.895|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:23:42.898|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:23:43.443|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+java.sql.SQLException: Access denied for user 'hornet'@'localhost' (using password: NO)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:25:06.119|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:25:06.124|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:25:06.665|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+java.sql.SQLException: Access denied for user 'hornet'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:25:24.399|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:25:24.402|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:25:24.976|main|ERROR|com.hornet.core.db.MysqlJDBCSqlTemplate - 注入第1的值时失败！
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:1418)
+	at com.mysql.cj.jdbc.PreparedStatement.getCoreParameterIndex(PreparedStatement.java:1431)
+	at com.mysql.cj.jdbc.PreparedStatement.setString(PreparedStatement.java:1761)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.setParams(MysqlJDBCSqlTemplate.java:52)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:139)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:25:24.988|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 返回结果：[{name=超级用户, id=1, pwd=admin123, account=admin}, {name=孙冠春, id=2, pwd=123456, account=sungc}]
+2018-05-28 18:27:56.823|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:27:56.827|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:27:57.394|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:994)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:864)
+	... 10 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:28:42.241|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:28:42.244|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:28:42.945|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:994)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:864)
+	... 10 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:29:04.201|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:29:04.204|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:29:04.705|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:994)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:864)
+	... 10 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:29:23.527|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:29:23.529|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:29:24.124|main|ERROR|com.hornet.core.db.MysqlJDBCSqlTemplate - 注入第1的值时失败！
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:1418)
+	at com.mysql.cj.jdbc.PreparedStatement.getCoreParameterIndex(PreparedStatement.java:1431)
+	at com.mysql.cj.jdbc.PreparedStatement.setString(PreparedStatement.java:1761)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.setParams(MysqlJDBCSqlTemplate.java:52)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:139)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:29:24.139|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 返回结果：[{name=超级用户, id=1, pwd=admin123, account=admin}, {name=孙冠春, id=2, pwd=123456, account=sungc}]
+2018-05-28 18:29:54.658|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:29:54.661|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{1=1}
+2018-05-28 18:29:55.232|main|ERROR|com.hornet.core.db.MysqlJDBCSqlTemplate - 注入第1的值时失败！
+java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:127)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.PreparedStatement.checkBounds(PreparedStatement.java:1418)
+	at com.mysql.cj.jdbc.PreparedStatement.getCoreParameterIndex(PreparedStatement.java:1431)
+	at com.mysql.cj.jdbc.PreparedStatement.setString(PreparedStatement.java:1761)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.setParams(MysqlJDBCSqlTemplate.java:52)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:139)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+2018-05-28 18:29:55.258|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 返回结果：[{name=超级用户, id=1, pwd=admin123, account=admin}, {name=孙冠春, id=2, pwd=123456, account=sungc}]
+2018-05-28 18:30:37.993|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:30:37.996|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:30:38.562|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 返回结果：[{name=超级用户, id=1, pwd=admin123, account=admin}, {name=孙冠春, id=2, pwd=123456, account=sungc}]
+2018-05-28 18:31:08.116|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:31:08.119|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:31:08.617|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:994)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:864)
+	... 10 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:37:29.347|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:37:29.349|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:37:29.856|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:994)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:864)
+	... 10 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:37:48.546|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:37:48.549|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:37:49.048|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:172)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:874)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:994)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:864)
+	... 10 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:45:18.847|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:45:18.850|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:45:23.370|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:944)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:869)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:888)
+	... 11 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:45:49.987|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:45:49.990|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:45:54.537|main|ERROR|com.hornet.core.db.MysqlJDBCHelper - 获取Connection出错！
+java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:108)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:87)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:61)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:71)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:944)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:869)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:234)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:227)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:62)
+	at com.hornet.core.db.MysqlJDBCHelper.getConnection(MysqlJDBCHelper.java:30)
+	at com.hornet.core.db.MysqlJDBCSqlTemplate.selectList(MysqlJDBCSqlTemplate.java:136)
+	at com.hornet.modules.demo.service.DemoService.selectAll(DemoService.java:25)
+	at com.hornet.modules.demo.service.DemoService.main(DemoService.java:34)
+Caused by: com.mysql.cj.core.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:60)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:99)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:139)
+	at com.mysql.cj.core.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:155)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:338)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.negotiateSSLConnection(MysqlaAuthenticationProvider.java:787)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:497)
+	at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:218)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1388)
+	at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:231)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:888)
+	... 11 common frames omitted
+Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1964)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:328)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:322)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1614)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1052)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:987)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1072)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1385)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1413)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1397)
+	at com.mysql.cj.core.io.ExportControlled.transformSocketToSSLSocket(ExportControlled.java:206)
+	at com.mysql.cj.mysqla.io.MysqlaProtocol.negotiateSSLConnection(MysqlaProtocol.java:333)
+	... 17 common frames omitted
+Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:319)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:985)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1596)
+	... 26 common frames omitted
+Caused by: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
+	at sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIXCertPathValidator.java:154)
+	at sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(PKIXCertPathValidator.java:80)
+	at java.security.cert.CertPathValidator.validate(CertPathValidator.java:292)
+	at com.mysql.cj.core.io.ExportControlled$X509TrustManagerWrapper.checkServerTrusted(ExportControlled.java:312)
+	... 28 common frames omitted
+2018-05-28 18:46:12.334|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:46:12.337|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:46:12.904|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 返回结果：[{name=超级用户, id=1, pwd=admin123, account=admin}, {name=孙冠春, id=2, pwd=123456, account=sungc}]
+2018-05-28 18:47:15.799|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 执行SQL：select hu.* from h_user hu where 1=1
+2018-05-28 18:47:15.801|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 输入参数：{}
+2018-05-28 18:47:16.130|main|INFO |com.hornet.core.db.MysqlJDBCSqlTemplate - 返回结果：[{name=超级用户, id=1, pwd=admin123, account=admin}, {name=孙冠春, id=2, pwd=123456, account=sungc}]

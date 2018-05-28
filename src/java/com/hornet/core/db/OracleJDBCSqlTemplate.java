@@ -20,9 +20,9 @@ import org.slf4j.LoggerFactory;
  * <li>作者：sunguanchun
  * <li>最后更新时间：2018年5月9日 上午11:04:52
  */
-public class JDBCSqlTemplate {
+public class OracleJDBCSqlTemplate {
 	
-	private static Logger logger = LoggerFactory.getLogger(JDBCSqlTemplate.class);
+	private static Logger logger = LoggerFactory.getLogger(OracleJDBCSqlTemplate.class);
 	
 	/**
 	 * 填充条件参数
@@ -75,7 +75,7 @@ public class JDBCSqlTemplate {
         logger.info("执行SQL：{}", sql);
         logger.info("输入参数：{}", params.toString());
         try {
-            con = JDBCHelper.getConnection();
+            con = OracleJDBCHelper.getConnection();
         	//sql执行准备工具
             st = con.prepareStatement(sql);
             setParams(st, params);
@@ -106,7 +106,7 @@ public class JDBCSqlTemplate {
         } catch (SQLException e) {
         	logger.error("结果集转为Map失败！", e);
         } finally {
-            JDBCHelper.close(con, st, rs);
+            OracleJDBCHelper.close(con, st, rs);
         }
         logger.info("返回结果：{}", results);
         return results;
@@ -127,7 +127,7 @@ public class JDBCSqlTemplate {
         logger.info("执行SQL：{}", sql);
         logger.info("输入参数：{}", params.toString());
         try {
-            con = JDBCHelper.getConnection();
+            con = OracleJDBCHelper.getConnection();
         	//sql执行准备工具
             st = con.prepareStatement(sql);
             setParams(st, params);
@@ -160,7 +160,7 @@ public class JDBCSqlTemplate {
         } catch (SQLException e) {
         	logger.error("结果集转为List失败！", e);
         } finally {
-            JDBCHelper.close(con, st, rs);
+            OracleJDBCHelper.close(con, st, rs);
         }
         logger.info("返回结果：{}", results);
         return results;
@@ -180,7 +180,7 @@ public class JDBCSqlTemplate {
         logger.info("执行SQL：{}", sql);
         logger.info("输入参数：{}", params.toString());
         try {
-            con = JDBCHelper.getConnection();
+            con = OracleJDBCHelper.getConnection();
         	//sql执行准备工具
             st = con.prepareStatement(sql);
             setParams(st, params);
@@ -197,7 +197,7 @@ public class JDBCSqlTemplate {
         } catch (SQLException e) {
         	logger.error("执行sql失败失败！", e);
         } finally {
-            JDBCHelper.close(con, st, null);
+            OracleJDBCHelper.close(con, st, null);
         }
         return result;
     }
@@ -216,7 +216,7 @@ public class JDBCSqlTemplate {
         logger.info("批量执行SQL：{}", sql);
         logger.info("输入参数：{}", params.toString());
         try {
-            con = JDBCHelper.getConnection();
+            con = OracleJDBCHelper.getConnection();
         	//sql执行准备工具
             st = con.prepareStatement(sql);
             for(Map<Integer, Object> objs: params){
@@ -236,7 +236,7 @@ public class JDBCSqlTemplate {
         } catch (SQLException e) {
         	logger.error("批量执行sql失败失败！", e);
         } finally {
-            JDBCHelper.close(con, st, null);
+            OracleJDBCHelper.close(con, st, null);
         }
         return result;
     }

@@ -16,11 +16,11 @@ import org.slf4j.LoggerFactory;
  * <li>作者：sunguanchun
  * <li>最后更新时间：2018年5月9日 上午10:49:10
  */
-public class JDBCHelper {
+public class OracleJDBCHelper {
 	
     //db.properties读取
     private static String db_config_path = "db.properties";
-    private static Logger logger = LoggerFactory.getLogger(JDBCHelper.class);
+    private static Logger logger = LoggerFactory.getLogger(OracleJDBCHelper.class);
     
     /**
      * 获取Connection
@@ -38,7 +38,7 @@ public class JDBCHelper {
      */
     public static Connection getConnection(String fileName) {
         //IO流读取db.properties文件
-        InputStream in = JDBCHelper.class.getClassLoader().getResourceAsStream(fileName);
+        InputStream in = OracleJDBCHelper.class.getClassLoader().getResourceAsStream(fileName);
         //读取参数
         Properties p = new Properties();
         try {

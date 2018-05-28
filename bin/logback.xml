@@ -8,10 +8,11 @@
 		</encoder>
 	</appender>
 	<appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>logs/hb4s.log</file>
+		<file>/Users/sunguanchun/0_my_work/1_workspace/ws_eclipse_github/HornetBatch/logs/hb4s.log</file>
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- 保存历史记录到这个文件夹，日起为后缀 -->
-			<fileNamePattern>logs/hb4s.log.%d{yyyy-MM-dd}</fileNamePattern>
+			<fileNamePattern>/Users/sunguanchun/0_my_work/1_workspace/ws_eclipse_github/HornetBatch/logs/hb4s.log.%d{yyyy-MM-dd}</fileNamePattern>
+			/HornetBatch/logs
 			<!-- 自动保存30天之内的日志文件 -->
 			<maxHistory>30</maxHistory>
 		</rollingPolicy>
