@@ -15,10 +15,11 @@
 9.按照业务要求修改{HornetBatch}/bin下db.properties
 10.按照业务要求修改{HornetBatch}/bin下config.properties
 11.crontab中配置定时任务（推荐在配置之前调试确认脚本可以正常跑）
-12.项目日志分为2块：
+12.修改sbin/目录下runModulesMain.sh中的项目配置路劲为环境路径
+13.项目日志分为2块：
 	10.1.在{HornetBatch}/logs下按照天生成的日志文件，日志内容包括项目所有的class输出的内容
 	10.2.在{HornetBatch}/logs/{module_name}下有名为{module_shell_name}.yyyyMMdd.log的日志文件，日志内容仅仅包含{module_shell_name}中对应主程序的日志内容
-13.每次迭代更新，请备份bin/ src/，只需更新bin/ src/ lib/ sbin/即可。
+14.每次迭代更新，请备份bin/ src/，只需更新bin/ src/ lib/ sbin/即可。
 
 
 
